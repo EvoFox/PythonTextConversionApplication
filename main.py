@@ -2,13 +2,12 @@
 import tkinter as ui
 from tkinter.constants import DISABLED, LEFT, NORMAL, RIGHT
 from typing import Text
-import owo, l337
+import owo, l337, rand_caps
 
-
-#Functions
 
 
 def convert():
+    """This function reads the state of the window and converts the input text into the designated format, and inserts it into the output section"""
     txt_output.configure(state=NORMAL)
     if selected.get() == option_list[0]:
         # L337
@@ -17,7 +16,7 @@ def convert():
     elif selected.get() == option_list[1]:
         # RaNDom cApS
         txt_output.delete(1.0, "end")
-        # txt_output.insert(1.0, owo.owoify(txt_input.get(1.0, 'end-1c')))
+        txt_output.insert(1.0, rand_caps.rand_caps(txt_input.get(1.0, 'end-1c')))
     else:
         # OwO Speak
         txt_output.delete(1.0, "end")
