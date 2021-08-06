@@ -2,7 +2,7 @@
 import tkinter as ui
 from tkinter.constants import DISABLED, LEFT, NORMAL, RIGHT
 from typing import Text
-import owo
+import owo, l337
 
 
 #Functions
@@ -13,7 +13,7 @@ def convert():
     if selected.get() == option_list[0]:
         # L337
         txt_output.delete(1.0, "end")
-        # txt_output.insert(1.0, owo.owoify(txt_input.get(1.0, 'end-1c')))
+        txt_output.insert(1.0, l337.hacker_speak(txt_input.get(1.0, 'end-1c')))
     elif selected.get() == option_list[1]:
         # RaNDom cApS
         txt_output.delete(1.0, "end")
