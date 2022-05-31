@@ -1,4 +1,4 @@
-# PythonTextConversionApplication
+# Python Text Conversion Application with Tkinter
 This project was created to explore the possibilty of creating Python applications with a GUI.
 
 ## What does it do?
